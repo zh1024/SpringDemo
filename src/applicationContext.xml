@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 配置bean -->
+	<!-- Spring以反射的方式创建HelloWorld实例 -->
+	<bean id="helloWorld" class="com.jimmy.spring.beans.HelloWorld">
+		<!-- 对应setName方法 -->
+		<property name="name" value="Jimmy"></property>
+	</bean>
+
+</beans>
