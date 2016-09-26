@@ -3,11 +3,30 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- 配置bean -->
-	<!-- Spring以反射的方式创建HelloWorld实例 -->
+	<!-- 
+		配置bean 
+		class: Bean的全类名，通过反射的方式在IOC容器中创建Bean的实例。要求Bean中必须有无参的构造器。
+		id: 标示容器中的Bean。id唯一。
+	-->
 	<bean id="helloWorld" class="com.jimmy.spring.beans.HelloWorld">
-		<!-- 对应setName方法 -->
+		<!-- 
+			通过setter方法注入Bean的属性值或依赖的对象
+			name属性指定Bean的属性名称
+			value属性或<value>子节点指定属性值 
+		-->
 		<property name="name" value="Jimmy"></property>
+	</bean>
+
+	<!-- 
+		使用构造器注入属性值
+		index指定参数的位置
+		type指定参数的类型
+		以区分重载的构造器
+	-->
+	<bean id="car" class="com.jimmy.spring.beans.Car">
+		<constructor-arg index="0" value="Audi"></constructor-arg>
+		<constructor-arg index="1" value="Shanghai"></constructor-arg>
+		<constructor-arg type="int" value="200"></constructor-arg>
 	</bean>
 
 </beans>
