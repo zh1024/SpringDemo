@@ -12,7 +12,7 @@
 		<!-- 
 			通过setter方法注入Bean的属性值或依赖的对象
 			name属性指定Bean的属性名称
-			value属性或<value>子节点指定属性值 
+			value属性或<value>子节点指定属性值
 		-->
 		<property name="name" value="Jimmy"></property>
 	</bean>
