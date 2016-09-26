@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+		父Bean
+		父Bean可以作为配置模板，也可以作为Bean实例
+		若只想父Bean作为模板，可以设置abstract属性为true，则父Bean不会被也不能被实例化
+		可以不指定父Bean的class属性，但abstract必须是true
+	 -->
+	<bean id="address1"
+		p:city="Beijing"
+		p:street="XiZhiMen"
+		abstract="true"
+	></bean>
+	
+	<!-- 
+		子Bean
+		parent属性指定继承哪个父Bean
+		子Bean从父Bean中继承配置，包括父Bean的属性配置
+		子Bean也可以覆盖从父Bean继承过来的配置
+		并不是父Bean中的所有配置都会被继承，比如：autowire、abstract等
+	 -->
+	<bean id="address2" class="com.jimmy.spring.beans.relation.Address"
+		p:street="DongDan"
+		parent="address1"
+	></bean>
+	
+	<!-- 
+		前置依赖Bean
+	 -->	
+	<bean id="car" class="com.jimmy.spring.beans.relation.Car"
+		p:brand="Audi"
+		p:price="300000"
+	></bean>
+	
+	<!-- 
+		通过depends-on属性设置Bean的前置依赖Bean
+		前置依赖Bean会在本Bean实例化之前被创建好
+		如果前置依赖于多个Bean，则用逗号或空格隔开
+	 -->
+	<bean id="person" class="com.jimmy.spring.beans.relation.Person"
+		p:name="Tom"
+		p:address-ref="address2"
+		depends-on="car"
+	></bean>
+		
+
+</beans>
