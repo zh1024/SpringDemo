@@ -32,6 +32,24 @@ public class Main {
 		Car car = (Car) ctx.getBean("car");
 		System.out.println(car.toString());
 		
+		Person person = (Person) ctx.getBean("person");
+		System.out.println(person);
+		
+		RichPerson richPerson = (RichPerson) ctx.getBean("richPerson");
+		System.out.println(richPerson);
+		
+		RichPerson2 richPerson2 = (RichPerson2) ctx.getBean("richPerson2");
+		System.out.println(richPerson2);
+		
+		DataSource dataSource = (DataSource) ctx.getBean("dataSource");
+		System.out.println(dataSource);
+		
+		RichPerson richPerson3 = (RichPerson) ctx.getBean("richPerson3");
+		System.out.println(richPerson3);
+		
+		RichPerson richPerson4 = (RichPerson) ctx.getBean("richPerson4");
+		System.out.println(richPerson4);
+		
 	}
 
 }

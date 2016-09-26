@@ -25,5 +25,9 @@ public class Car {
 	public String toString() {
 		return "Car [brand=" + brand + ", corp=" + corp + ", price=" + price + ", maxSpeed=" + maxSpeed + "]";
 	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
 	
 }
