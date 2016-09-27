@@ -17,3 +17,5 @@
 [008.Spring表达式语言SpEL](docs/008.Spring表达式语言SpEL.md)
 
 [009.管理Bean的生命周期](docs/009.管理Bean的生命周期.md)
+
+[010.配置Bean（工厂方法）](docs/010.配置Bean（工厂方法）.md)
