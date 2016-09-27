@@ -2,7 +2,7 @@
 
 [001.HelloWorld](docs/001.HelloWorld.md)
 
-[002.配置Bean](docs/002.配置Bean.md)
+[002.配置Bean（反射）](docs/002.配置Bean（反射）.md)
 
 [003.属性配置细节](docs/003.属性配置细节.md)
 
