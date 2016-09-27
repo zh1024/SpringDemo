@@ -13,3 +13,5 @@
 [006.Bean的作用域](docs/006.Bean的作用域.md)
 
 [007.使用外部属性文件](docs/007.使用外部属性文件.md)
+
+[008.Spring表达式语言SpEL](docs/008.Spring表达式语言SpEL.md)
