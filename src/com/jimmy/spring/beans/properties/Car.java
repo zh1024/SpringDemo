@@ -1,4 +1,4 @@
-package com.jimmy.spring.beans.scope;
+package com.jimmy.spring.beans.properties;
 
 public class Car {
 	
