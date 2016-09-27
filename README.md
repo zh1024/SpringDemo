@@ -19,3 +19,6 @@
 [009.管理Bean的生命周期](docs/009.管理Bean的生命周期.md)
 
 [010.配置Bean（工厂方法）](docs/010.配置Bean（工厂方法）.md)
+
+[011.配置Bean（FactoryBean）](docs/011.配置Bean（FactoryBean）.md)
+
