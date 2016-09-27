@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+		设置init-method和destroy-method属性
+		为Bean指定初始化和销毁方法
+	 -->
+	<bean id="car" class="com.jimmy.spring.beans.cycle.Car" 
+		init-method="init" 
+		destroy-method="destory">
+		<property name="brand" value="Audi"></property>
+		<property name="price" value="500000"></property>
+	</bean>
+	
+	<!-- 
+		Bean后置处理器允许在调用初始化方法前后对Bean进行额外处理
+		Bean后置处理器对IOC容器中的所有Bean实例逐一处理，而非单一实例。
+		典型应用是检查Bean属性的正确性或更改Bean的属性
+	 -->
+	<bean class="com.jimmy.spring.beans.cycle.MyBeanPostProcessor"></bean>
+	
+</beans>

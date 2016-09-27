@@ -15,3 +15,5 @@
 [007.使用外部属性文件](docs/007.使用外部属性文件.md)
 
 [008.Spring表达式语言SpEL](docs/008.Spring表达式语言SpEL.md)
+
+[009.管理Bean的生命周期](docs/009.管理Bean的生命周期.md)
