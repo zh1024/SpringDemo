@@ -2,7 +2,7 @@
 
 [001.HelloWorld](docs/001.HelloWorld.md)
 
-[002.配置Bean（反射）](docs/002.配置Bean（反射）.md)
+[002.配置Bean（反射）（XML）](docs/002.配置Bean（反射）（XML）.md)
 
 [003.属性配置细节](docs/003.属性配置细节.md)
 
@@ -18,7 +18,7 @@
 
 [009.管理Bean的生命周期](docs/009.管理Bean的生命周期.md)
 
-[010.配置Bean（工厂方法）](docs/010.配置Bean（工厂方法）.md)
+[010.配置Bean（工厂方法）（XML）](docs/010.配置Bean（工厂方法）（XML）.md)
 
-[011.配置Bean（FactoryBean）](docs/011.配置Bean（FactoryBean）.md)
+[011.配置Bean（FactoryBean）（XML）](docs/011.配置Bean（FactoryBean）（XML）.md)
 
