@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- 
+		在组件类上使用了特定的注解之后，还需要在Spring的配置文件中配置组件扫描<context:component-scan>
+		base-package属性指定需要扫描的基包，Spring容器将会扫描基包及其子包里的所有类
+	-->
+	<context:component-scan 
+		base-package="com.jimmy.spring.beans.annotation">
+	</context:component-scan>
+	
+	<!-- 如果仅希望扫描特定的类而非基包下的所有类，可以使用resource-pattern属性进行指定 
+	<context:component-scan 
+		base-package="com.jimmy.spring.beans.annotation"
+		resource-pattern="repository/*.class">
+	</context:component-scan>
+	-->
+	<!-- <content:exclude-filter>子节点指定不扫描的组件注解 
+	<context:component-scan 
+		base-package="com.jimmy.spring.beans.annotation">
+		<context:exclude-filter type="annotation" 
+			expression="org.springframework.stereotype.Repository"/>
+	</context:component-scan>
+	-->
+	<!-- 
+		<content:include-filter>子节点指定扫描的组件注解
+		要与use-default-filters属性配合使用
+
+	<context:component-scan 
+		base-package="com.jimmy.spring.beans.annotation"
+		use-default-filters="false">
+		<context:include-filter type="annotation" 
+			expression="org.springframework.stereotype.Repository"/>
+	</context:component-scan>
+	-->
+	<!-- <content:exclude-filter>子节点指定不扫描的类或接口 
+	<context:component-scan 
+		base-package="com.jimmy.spring.beans.annotation">
+		<context:exclude-filter type="assignable" 
+			expression="com.jimmy.spring.beans.annotation.repository.UserRepository"/>
+	</context:component-scan>
+	-->
+	<!-- 
+		<content:include-filter>子节点指定扫描的类或接口
+		要与use-default-filters属性配合使用
+	
+	<context:component-scan 
+		base-package="com.jimmy.spring.beans.annotation"
+		use-default-filters="false">
+		<context:include-filter type="annotation" 
+			expression="com.jimmy.spring.beans.annotation.repository.UserRepository"/>
+	</context:component-scan>
+	-->
+</beans>

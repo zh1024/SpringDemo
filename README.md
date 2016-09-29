@@ -6,7 +6,7 @@
 
 [003.属性配置细节](docs/003.属性配置细节.md)
 
-[004.自动装配](docs/004.自动装配.md)
+[004.自动装配（XML）](docs/004.自动装配（XML）.md)
 
 [005.Bean之间的关系](docs/005.Bean之间的关系.md)
 
@@ -21,4 +21,8 @@
 [010.配置Bean（工厂方法）（XML）](docs/010.配置Bean（工厂方法）（XML）.md)
 
 [011.配置Bean（FactoryBean）（XML）](docs/011.配置Bean（FactoryBean）（XML）.md)
+
+[012.配置Bean（注解）](docs/012.配置Bean（注解）.md)
+
+[013.自动装配（注解）](docs/013.自动装配（注解）.md)
 
