@@ -15,7 +15,9 @@ public class Main {
 		
 		System.out.println(result);
 		
+		result = arithmeticCalculator.div(2, 2);
+		
+		System.out.println(result);
 	}
-	
-	
+		
 }
