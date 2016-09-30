@@ -30,6 +30,8 @@
 
 [015.AOP基础](docs/015.AOP基础.md)
 
-[016.Spring AOP](docs/016.Spring AOP.md)
+[016.Spring AOP（注解）](docs/016.Spring AOP（注解）.md)
+
+[017.Spring AOP（XML）](docs/017.Spring AOP（XML）.md)
 
 
