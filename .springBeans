@@ -12,6 +12,7 @@
 		<config>src/beans-relation.xml</config>
 		<config>src/beans-generic-di.xml</config>
 		<config>src/beans-aop.xml</config>
+		<config>src/beans-jdbc.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
