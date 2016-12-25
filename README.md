@@ -1,6 +1,6 @@
 # Spring学习笔记
 
-[000.](dosc/000.md)
+[000.](docs/000.md)
 
 [001.HelloWorld](docs/001.HelloWorld.md)
 
